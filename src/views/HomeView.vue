@@ -16,6 +16,7 @@ const cards = ref([
   { id: 8, content: 'Card 8' },
   { id: 9, content: 'Card 9 (Longer Content Example)' },
   { id: 10, content: 'Card 10' },
+  { id: 11, content: 'Card 11' },
   ]);
 
 </script>
