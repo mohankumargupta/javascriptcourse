@@ -44,7 +44,7 @@ const cards = ref([
           <div v-for="card in cards" :key="card.id"
             class="bg-white border border-gray-300 rounded-lg p-5 text-center shadow-md">
             <div
-              class="flex flex-col h-full p-3 rounded hover:-translate-y-2 transition-transform duration-300 shadow border border-gray-800">
+              class="flex flex-col h-full p-3 rounded hover:scale-105 hover:border-blue-700 transition-transform duration-300 shadow border border-gray-800">
               <div>
                 <p class="text-xl text-gray-800 dark:text-gray-100 font-bold">{{ card.title }}</p>
                 <p class="text-xl pt-2 text-blue-700 dark:text-gray-400 font-kalam">
