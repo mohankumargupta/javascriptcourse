@@ -1,7 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
 @import "tailwindcss";
 @import "tailwindcss-primeui";
 
 @import './base.css';
+
+@theme {
+  --font-kalam: "Kalam", sans-serif;
+}
 
 /*
 #app {
