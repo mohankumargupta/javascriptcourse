@@ -7,9 +7,12 @@ presentations := "intro advanced workshop case-study"
 default:
     @just --list
 
+dev PRES:
+    npx slidev "{{ PRES}}.md"
+
 # Build a specific presentation
 build PRES:
-    npx slidev build "{{PRES}}.md" --base "/javascriptcourse/slides/dist/{{PRES}}/" --out "dist/{{PRES}}"
+    npx slidev build "{{PRES}}.md" --base "/javascriptcourse/slides/{{PRES}}/" --out "{{PRES}}"
 
 # Build all presentations (cross-platform version)
 build-all:
@@ -22,9 +25,6 @@ build-all:
 clean:
     @if [ -d "dist" ]; then rm -rf dist/*; else echo "No dist folder to clean"; fi
 
-# Serve a specific presentation for development
-dev PRES:
-    slidev "slides/{{PRES}}.md"
 
 # Create a new presentation (cross-platform)
 new PRES:
