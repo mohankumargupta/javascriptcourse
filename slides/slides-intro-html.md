@@ -82,17 +82,25 @@ title: HTML Elements can be nested
 HTML elements can contain text content
 
 ```html
-<p>Som text</p>
+<p>Some text</p>
 ```
 
-But it can also be nested, like example.com
+But it can contain other HTML elements.
+
+Here is an example of **a** tag inside a **p** tag
 
 ```html
 <p> <a href="">More information</a> </p>
 ```
 
-This is similar to files and folder on a hard drive, where a folder contains
-files and folder.
+This is also valid HTML
 
-In HTML, a HTML elements contains INSIDE text content or other elements.
+```html
+<p> Click the following link <a href="">Some link</a></p>
+```
+
+So HTML elements can contain either:
+* text content
+* one or more HTML elements
+* a mixture of both
 

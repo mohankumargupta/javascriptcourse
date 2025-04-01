@@ -12,7 +12,7 @@ dev PRES:
 
 # Build a specific presentation
 build PRES:
-    npx slidev build "{{PRES}}.md" --base "/javascriptcourse/slides/{{PRES}}/" --out "{{PRES}}"
+    npx slidev build "{{PRES}}.md" --base "/javascriptcourse/slides/{{PRES}}/" --out "../public/slides/{{PRES}}"
 
 # Build all presentations (cross-platform version)
 build-all:
