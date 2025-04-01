@@ -1,0 +1,38 @@
+set shell := ["powershell.exe", "-c"]
+
+# Define the list of presentations
+presentations := "intro advanced workshop case-study"
+
+# Default recipe to list available commands
+default:
+    @just --list
+
+dev PRES:
+    npx slidev "{{ PRES}}.md"
+
+# Build a specific presentation
+build PRES:
+    npx slidev build "{{PRES}}.md" --base "/javascriptcourse/slides/{{PRES}}/" --out "{{PRES}}"
+
+# Build all presentations (cross-platform version)
+build-all:
+    @for pres in {{presentations}}; do \
+        echo "Building $pres..."; \
+        just build "$pres"; \
+    done
+
+# Clean all dist folders (cross-platform)
+clean:
+    @if [ -d "dist" ]; then rm -rf dist/*; else echo "No dist folder to clean"; fi
+
+
+# Create a new presentation (cross-platform)
+new PRES:
+    @if [ ! -f "slides/template.md" ]; then echo "Error: template.md not found"; exit 1; fi
+    @cp "slides/template.md" "slides/{{PRES}}.md"
+    @echo "Created slides/{{PRES}}.md"
+
+# List all presentations
+list:
+    @echo "Available presentations:"
+    @for pres in {{presentations}}; do echo "- $pres"; done
