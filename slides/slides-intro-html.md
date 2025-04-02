@@ -1,6 +1,6 @@
 ---
 # You can also start simply with 'default'
-theme: seriph
+theme: academic
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
 #background: https://cover.sli.dev
@@ -15,6 +15,7 @@ drawings:
 transition: slide-left
 # enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
+layout: cover
 # open graph
 # seoMeta:
 #  ogImage: https://cover.sli.dev
@@ -32,7 +33,7 @@ mdc: true
   <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="slidev-icon-btn">
     <carbon:edit />
   </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" class="slidev-icon-btn">
+  <a href="https://mohankumargupta.github.io/javascriptcourse" target="_blank" class="slidev-icon-btn">
     <carbon:logo-github />
   </a>
 </div>
@@ -42,7 +43,7 @@ The last comment block of each slide will be treated as slide notes. It will be 
 -->
 
 ---
-transition: fade-out
+title: HTML Elements
 ---
 
 # HTML Elements
@@ -87,8 +88,6 @@ HTML elements can contain text content
 
 But it can contain other HTML elements.
 
-Here is an example of **a** tag inside a **p** tag
-
 ```html
 <p> <a href="https://www.iana.org/domains/example">More information</a> </p>
 ```
@@ -104,3 +103,28 @@ So HTML elements can contain either:
 * one or more HTML elements
 * a mixture of both
 
+---
+title: Attributes
+---
+
+# Attributes
+
+Some attributes are global(apply to all HTML elements)
+
+```html
+<p id="thisone">Some text</p>
+
+<ul>
+  <li class="menuitem firstmenu">Menu One</li>
+  <li class="menuitem">Menu Two</li>
+  <li class="menuitem">Menu Three</li>
+</ul>
+```
+
+Some attributes only apply to certain elements
+
+```html
+<img src="cookie.png"/>
+
+<a href="https://google.com">Google Search</a>
+```
