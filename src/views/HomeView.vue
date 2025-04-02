@@ -30,7 +30,7 @@ const blockly_cards = [
     title: "Hello World Blockly",
     topic: "Blockly",
     content: 'Playground One',
-    url: "",
+    url: "https://mohankumargupta.github.io/javascriptcourse/slides/slides-intro-html",
     rating: 1,
   },
 ];
@@ -68,19 +68,21 @@ const cards = ref([
     ">
             <div v-for="card in card_section.cards" :key="card.id"
               class="bg-white border border-gray-300 rounded-lg p-5 text-center shadow-md">
+              <a :href="card.url" target="_blank">
               <div
                 class="flex flex-col h-full p-3 rounded hover:scale-105 hover:border-blue-700 transition-transform duration-300 shadow border border-gray-800">
                 <div>
-                  <p class="text-xl text-gray-800 dark:text-gray-100 font-bold">{{ card.title }}</p>
-                  <p class="text-xl pt-2 text-blue-700 dark:text-gray-400 font-kalam">
+                  <p class="text-xl text-gray-800  font-bold">{{ card.title }}</p>
+                  <p class="text-xl pt-2 text-blue-700 font-kalam">
                     {{ card.content }}
                   </p>
                 </div>
                 <div class="mt-auto pt-4 flex">
-                  <p class="text-gray-500 font-bold dark:text-gray-300">🧰 {{ card.topic }}</p>
-                  <p class="ml-auto text-gray-500 font-bold dark:text-gray-300">{{ card.rating }} ⭐</p>
+                  <p class="text-gray-500 font-bold">🧰 {{ card.topic }}</p>
+                  <p class="ml-auto text-gray-500 font-bold">{{ card.rating }} ⭐</p>
                 </div>
               </div>
+              </a>
             </div>
           </div>
         </div>

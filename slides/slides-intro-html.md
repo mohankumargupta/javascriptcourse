@@ -90,13 +90,13 @@ But it can contain other HTML elements.
 Here is an example of **a** tag inside a **p** tag
 
 ```html
-<p> <a href="">More information</a> </p>
+<p> <a href="https://www.iana.org/domains/example">More information</a> </p>
 ```
 
 This is also valid HTML
 
 ```html
-<p> Click the following link <a href="">Some link</a></p>
+<p> Click the following link <a href="https://www.iana.org/domains/example">Some link</a></p>
 ```
 
 So HTML elements can contain either:
