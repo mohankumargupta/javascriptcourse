@@ -30,7 +30,7 @@ const blockly_cards = [
     title: "Hello World Blockly",
     topic: "Blockly",
     content: 'Playground One',
-    url: "https://mohankumargupta.github.io/quasaarhelloworld",
+    url: "https://mohankumargupta.github.io/quasarhelloworld",
     rating: 1,
   },
 ];
