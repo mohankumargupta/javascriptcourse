@@ -17,6 +17,11 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/AboutView.vue'),
     },
+    {
+      path: '/grok',
+      name: 'grok',
+      component: () => import('../views/GrokTemplate.vue'),
+    }
   ],
 })
 
