@@ -11,7 +11,7 @@ const fundamental_cards = [
     title: "HTML Important Bits",
     topic: "HTML",
     content: 'Elements, tags, attributes',
-    url: "",
+    url: "https://mohankumargupta.github.io/javascriptcourse/slides/slides-intro-html",
     rating: 1,
   },
   {
@@ -30,7 +30,7 @@ const blockly_cards = [
     title: "Hello World Blockly",
     topic: "Blockly",
     content: 'Playground One',
-    url: "https://mohankumargupta.github.io/javascriptcourse/slides/slides-intro-html",
+    url: "https://mohankumargupta.github.io/quasaarhelloworld",
     rating: 1,
   },
 ];
