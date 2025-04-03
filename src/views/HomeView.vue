@@ -19,7 +19,7 @@ const fundamental_cards = [
     title: "HTML and DOM",
     topic: "DOM",
     content: 'What is DOM?',
-    url: "",
+    url: "https://mohankumargupta.github.io/javascriptcourse/slides/slides-html-dom",
     rating: 4,
   },
 ];
